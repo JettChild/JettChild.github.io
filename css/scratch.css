@@ -41,7 +41,7 @@ h1, h2 {
 
 .gear-image {
   flex: 1;
-  text-align: center;
+  text-align: flex-start;
 }
 
 .gear-image img {
