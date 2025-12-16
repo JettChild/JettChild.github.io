@@ -1,0 +1,30 @@
+body {
+  background-color: #eef4f1;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+h1, h2 {
+  color: #1f4f46;
+}
+
+.nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #1f4f46;
+  font-weight: bold;
+}
