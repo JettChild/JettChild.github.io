@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fly Fishing Guessing Game</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #eef4f1;
+      color: #333;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .app-box {
+      background: white;
+      max-width: 400px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    input {
+      padding: 8px;
+      width: 80px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 8px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #1f4f46;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="app-box">
+  <h1>Fly Fishing Guessing Game 🎣</h1>
+  <p>
+    Guess how many trout I caught on my last trip (between 1 and 20).
+  </p>
+
+  <input type="number" id="guess" min="1" max="20">
+  <button onclick="checkGuess()">Guess</button>
+
+  <div class="message" id="message"></div>
+</div>
+
+<a href="scratch.html">← Back to Fly Fishing Page</a>
+
+<script>
+  const secretNumber = Math.floor(Math.random() * 20) + 1;
+
+  function checkGuess() {
+    const guess = Number(document.getElementById("guess").value);
+    const message = document.getElementById("message");
+
+    if (!guess) {
+      message.textContent = "Enter a number first.";
+      return;
+    }
+
+    if (guess === secretNumber) {
+      message.textContent = "🎉 Correct! You nailed it.";
+    } else if (guess < secretNumber) {
+      message.textContent = "Too low. Try again.";
+    } else {
+      message.textContent = "Too high. Try again.";
+    }
+  }
+</script>
+
+</body>
+</html>
