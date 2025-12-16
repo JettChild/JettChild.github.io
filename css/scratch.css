@@ -45,9 +45,12 @@ h1, h2 {
 }
 
 .gear-image img {
-  max-width: 85%;
+  max-width: 100%;
+  max-height: 350px;
   height: auto;
   border-radius: 8px;
+  object-fit: cover;
+}
 }
 /* Reduce space between gear title and list */
 #gear h2 {
