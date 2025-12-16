@@ -28,3 +28,24 @@ h1, h2 {
   color: #1f4f46;
   font-weight: bold;
 }
+/* Gear section: list left, image right */
+.gear-box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.gear-list {
+  flex: 1;
+}
+
+.gear-image {
+  flex: 1;
+  text-align: center;
+}
+
+.gear-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
