@@ -13,7 +13,7 @@ body {
 
 .section {
   background-color: white;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 25px;
   border-radius: 8px;
 }
@@ -36,16 +36,16 @@ h1, h2 {
 }
 
 .gear-list {
-  flex: 1;
+  flex: 1.2;
 }
 
 .gear-image {
-  flex: 1;
-  text-align: flex-start;
+  flex: 0.8;
+  text-align: center;
 }
 
 .gear-image img {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
   border-radius: 8px;
 }
