@@ -49,3 +49,11 @@ h1, h2 {
   height: auto;
   border-radius: 8px;
 }
+/* Reduce space between gear title and list */
+#gear h2 {
+  margin-bottom: 10px;
+}
+
+#gear ol {
+  margin-top: 0;
+}
